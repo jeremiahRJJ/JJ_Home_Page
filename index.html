@@ -1,13 +1,55 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>jj-home-page</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>JJ — Personal Homepage</title>
+<link rel="stylesheet" href="./style.css">
+<meta name="description" content="Personal homepage: project overview, structure, and links to gallery/learning.">
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="./index.html">JJ</a>
+  <div>
+    <a class="active" href="./index.html">Home</a>
+    <a href="./gallery.html">Gallery</a>
+    <a href="./links.html">Links</a>
+  </div>
+</nav>
+
+<main class="container">
+  <h1>Hello, I'm JJ 👋</h1>
+  <h3>Second-year CSE student @ Politechnika Opolska. Welcome to my personal site!</h3>
+  <p>This site is my personal homepage and long-term hub. Report I focuses on the <strong>Hobbies → Photography</strong> branch while outlining the overall structure for future stages.</p>
+
+  <section>
+    <h2>About this project</h2>
+    <div class="kv"><div class="k">Stack</div><div>HTML5, CSS3, React + Vite (for app shell), hosted on GitHub Pages</div></div>
+    <div class="kv"><div class="k">Goal</div><div>Create an extensible personal site with themed branches (Hobbies, Projects, Notebook, Academic, Vision Board)</div></div>
+    <div class="kv"><div class="k">Report I focus</div><div>Photography: description, 12-image gallery, 10 outbound study links</div></div>
+    <div class="kv"><div class="k">Live URL</div><div class="mono">https://jeremiahRJJ.github.io/JJ_Home_Page/</div></div>
+  </section>
+
+  <section>
+    <h2>Structure (overall plan)</h2>
+    <ul>
+      <li><strong>Hobbies</strong> <span class="badge">Photography (done in Report I)</span> · Sketching (planned) · Chess (planned) · Table Tennis (planned)</li>
+      <li><strong>My Projects</strong> <span class="badge">planned</span> — Description, cards, repos</li>
+      <li><strong>My Notebook</strong> <span class="badge">planned</span> — study notes, topic pages, blog</li>
+      <li><strong>Academic</strong> <span class="badge">planned</span> — courses, labs, current studies, achievements</li>
+      <li><strong>Vision Board</strong> <span class="badge">planned</span> — goals, timeline, milestones, Collage</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Quick access</h2>
+    <p>
+      → Photography gallery: <a href="./gallery.html">view 12 images</a><br>
+      → Photography learning links: <a href="./links.html">10 curated resources</a>
+    </p>
+  </section>
+</main>
+
+<footer class="footer">© <span id="y"></span> JJ — Personal Homepage</footer>
+<script>document.getElementById('y').textContent=new Date().getFullYear()</script>
+</body>
 </html>

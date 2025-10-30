@@ -46,6 +46,8 @@ function Layout({ children }) {
             <li><NavLink to="/about">About</NavLink></li>
             <li><NavLink to="/projects">Projects</NavLink></li>
             <li><NavLink to="/contact">Contact</NavLink></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="links.html">Links</a></li>
           </ul>
         </nav>
       </header>
